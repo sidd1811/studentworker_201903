@@ -7,7 +7,7 @@ import json
 import os
 
 cwd = os.getcwd()
-file = cwd + "\\studentworker_201903\\accounts.json"
+file = cwd + "/accounts.json"
 with open(file) as jsonfile:
     accounts = json.load(jsonfile)
     accounts_sorted = sorted(accounts, key=lambda x: x['balance'], reverse=True)
